@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angulardemo</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <style>
+  .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+.whitesmokebackground
+{
+background:whitesmoke;
+-webkit-box-shadow: 0px 2px 6px 0px rgba(168,161,168,1);
+-moz-box-shadow: 0px 2px 6px 0px rgba(168,161,168,1);
+box-shadow: 0px 2px 6px 0px rgba(168,161,168,1);
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  
+    .text-xs-center {
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark" style="background:white;">
+  <a class="navbar-brand" href="#"><img src="https://itechnodesigns.com/wp-content/uploads/2021/07/itechnodesingslogo.jpg" style="height:50px;" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="background:black;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+	 <ul class="navbar-nav ml-auto">
+      <li class="nav-item navbar-right">
+        <a type='button' class="btn btn-outline-danger" href="#" style="border-radius:10px;">Quick Tour</a>
+      </li>
+      
+    </ul>
+  </div>  
+</nav>
+
+  <div class="container-fluid text-xs-center">
+  <div class="row">
+  <div class="col-md-9">
+  <div class="whitesmokebackground p-3">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+     <img src="https://itechnodesigns.com/wp-content/uploads/2021/07/professional-resume.png" class="rounded-circle" alt="Cinque Terre" style="width:140px;height:140px;" > 
+    </div>
+    <div class="col-sm-6">
+      <h3>Amit Prabhakar</h3>
+      <p class="mb-0" style="color:grey">Technical Product Manager</p>
+      <p style="color:grey">Basking Ridge, NJ 07920, USA</p>
+	  <div class="social-icons">
+                <ul>
+                  <li class="icon-circle"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li class="icon-circle"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li class="icon-circle"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                  <li class="icon-circle"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+				  <li><i class="bi bi-facebook"></i></li>
+                </ul>
+              </div>
+    </div>
+    <div class="col-sm-3">
+      <h5>12 Yrs Exp</h5>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="container-fluid mt-3 p-0">
+
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#summary">Summary</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#experience">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#education">Education</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="summary" class="container-fluid tab-pane active p-0"><br>
+	<div class="summary whitesmokebackground p-3">
+      <h3>Summary</h3>
+	  <hr/>
+      <p class="text-justify" style="color:grey">A P is a resident of Irving, TX, US. He has been working in the Engineering occupational sector for more than 14 years. Currently he is employed as a Technical Product Manager at Business Partner Digital Transformation. Amit has an extensive management experience (9 years) with exposure to executive/middle management positions.</p>
+      </div>
+	  
+	  <div class="experience whitesmokebackground mt-2 p-3">
+	  <h3>Experience</h3>
+	     <hr/>
+	   <div class="container-fluid p-0">
+	      <div class="row">
+		  
+		  <div class="col-md-9">
+		    <h5>Technical Product Manager</h5>
+			<p style="color:grey">Collabera</p>
+			
+		  </div>
+		    <div class="col-md-3">
+		    <h5 >Full Time | 06/01/2018</h5>
+			<h6 style="color:grey">Collabera</h6>
+		  </div>
+		  
+		  </div>
+	   
+	   </div>
+	 <h5> Business Partner Digital Transformation  </h5>
+     <ul class="list-unstyled" style="color:grey">
+		 <li>*   Lead the product revamp project for internal CMS (Contact management system) and develop new features for product ClikSource (End to end hiring platform powered by AI, ML, NLP and analytics) by bringing in end user experience-based design and analytics driven outcome. Work with different teams across geography to define SOW, develop business requirement document, HLD & LLD and work with development teams to deliver the project within time and stipulated budget.
+
+		 </li>
+		 <li>
+		   *   Solution architect the next generation solutions using AI, Machine learning, analytics in a data driven user experience lead project environment.
+
+		 </li>
+		 <li>*   Spear head the project management revamp project to consolidate different systems into one single reporting tool to provide the senior management a comprehensive view of the IT projects.
+	
+		 </li>
+		 
+		 </ul>
+	
+	  </div>
+	  
+	  
+	  
+	  <div class="summary education mt-2 p-3 whitesmokebackground">
+      <h3>Education</h3>
+	    <hr/>
+      <p class="text-justify" style="color:grey">>A P is a resident of Irving, TX, US. He has been working in the Engineering occupational sector for more than 14 years. Currently he is employed as a Technical Product Manager at Business Partner Digital Transformation. Amit has an extensive management experience (9 years) with exposure to executive/middle management positions.</p>
+      </div>
+	  
+	  
+	   <div class="summary workpreference mt-2 p-3 whitesmokebackground">
+      <h3>Work peference</h3>
+      
+	  
+	    <div class="container-fluid p-0">
+		
+		<div class="row">
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                   data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                   data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                   data-target="#image-gallery">
+                    <img class="img-thumbnail"
+                         src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a>
+            </div>
+         
+
+
+
+           
+		
+		</div>
+		
+		</div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  </div>
+	
+	</div>
+   
+  </div>
+</div>
+
+  </div>
+  <div class="col-md-3">
+  
+      <div class="container-fluid p-0">
+	  <div class="row">
+	     <div class="col-md-12 whitesmokebackground pt-2 pb-2 ">
+                  
+
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/KEiAVv1UNac" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="#" class="video-play"></a>
+                 
+                   
+                </div>
+				</div>
+				
+				
+				
+				<div class="row whitesmokebackground mt-3">
+				<div class="col-md-12">
+				<h5 class="pt-2">Technical Skill</h5>
+				  <hr/>
+				 <div class="container-fluid">
+				 <div class="row">
+				 <div class="col-md-6 pb-2">
+				  <input type="button" class="btn btn-outline-success form-control" style="border-radius:5px;" value="aws" />
+				  
+				 </div>
+				  <div class="col-md-6 pb-2">
+				 	  <input type="button" class="btn btn-outline-success form-control" style="border-radius:5px;" value="angular" />
+				 </div>
+				  <div class="col-md-6 pb-2">
+				  <input type="button" class="btn btn-outline-success form-control" style="border-radius:5px;" value="aws" />
+				  
+				 </div>
+				  <div class="col-md-6 pb-2">
+				 	  <input type="button" class="btn btn-outline-success form-control" style="border-radius:5px;" value="angular" />
+				 </div>
+				  <div class="col-md-6 pb-2">
+				  <input type="button" class="btn btn-outline-success form-control" style="border-radius:5px;" value="aws" />
+				  
+				 </div>
+				  <div class="col-md-6 pb-2">
+				 	  <input type="button" class="btn btn-outline-success form-control" style="border-radius:5px;" value="angular" />
+				 </div>
+				
+				 
+				 </div>
+				 
+				 </div>
+				
+				 
+				</div>				
+				</div>
+				<div class="row  whitesmokebackground mt-3">
+				
+				<div class="col-md-12">
+				<h5 class="pt-2">Resume</h5>
+				  <hr/>
+				  <img src="https://d.novoresume.com/images/doc/functional-resume-template.png" class="img-thumbnail mb-3" alt="Cinque Terre" width="304" height="400"> 
+				
+				</div>
+				
+				</div>
+	   </div>
+  
+  
+  
+  </div>
+  </div>
+  
+  </div>
+
+
+<footer class="section footer-classic context-dark bg-image text-xs-center mt-3" style="background: #2d3246;">
+        <div class="container-fluid">
+          <div class="row row-30 pt-3">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="https://itechnodesigns.com/wp-content/uploads/2021/07/itechnodesingslogo.jpg" alt="" width="140" height="37"></a>
+                <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Template desinged by itechnodesigns.com</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>Bangalore,INDIA</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">info@itechnodesigns.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">+918892******</a> <span>or</span> <a href="tel:#">https://itechnodesigns.com</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>
+      </footer>
+</body>
+</html>
